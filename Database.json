@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "watingList": [
+    {
+      "id": 11,
+      "member": 3,
+      "phoneNumber": "010-1234-5678",
+      "visitedCount": 2,
+      "standby": 2,
+      "watingTime": 6
+    },
+    {
+      "id": 12,
+      "member": 5,
+      "phoneNumber": "010-4321-8765",
+      "visitedCount": 3,
+      "standby": 3,
+      "watingTime": 4
+    },
+    {
+      "id": 13,
+      "member": 2,
+      "phoneNumber": "010-0987-6543",
+      "visitedCount": 1,
+      "standby": 4,
+      "watingTime": 2
+    },
+    {
+      "id": 14,
+      "member": 4,
+      "phoneNumber": "010-2060-2345",
+      "visitedCount": 1,
+      "standby": 5,
+      "watingTime": 1
+    }
+  ],
+  "login": {
+    "adminCode": "dqw1"
+  }
+}

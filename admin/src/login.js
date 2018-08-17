@@ -10,7 +10,7 @@ export default function() {
                       <div class='col-lg-1'></div>
                       <form class='col-lg-6 row'>
                         <div class="col-10 form-group signin-box">
-                          <input type="code" class="form-control" id="codeInput" placeholder="Admin Code"></input>
+                          <input class="form-control" id="codeInput" placeholder="Admin Code"></input>
                           <small id="codeHelp" class="form-text text-muted">write your code that you got at homepage.</small>
                         </div>
                         <button type="button" id='login' class="col-2 btn signin-btn">LogIn</button>
