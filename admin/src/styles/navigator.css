@@ -1,12 +1,4 @@
-html, body, .container-fluid {
-  height: 100%;
-  width: 100%;
-}
 
-.container-fluid {
-  padding-right: 3px;
-  padding-left: 3px;
-}
 /* nav */
 .navi {
   background-color: #505160;
