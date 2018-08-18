@@ -25,6 +25,7 @@ $(document).ready(() => {
   $(document).on('click', '#memberNum', app.waitingPeopleHandler);
 });
 
+// ************************* login page **************************************
 //login handler
 app.loginHandler = () => {
   const adminCode = $('#codeInput').val();
@@ -37,18 +38,8 @@ app.loginHandler = () => {
     .catch( response => { console.log(response) } );
 };
 
-//wating handler
-
-
-app.waitingPeopleHandler = () => {
-  var text = $(".number.modal-body input").val()
-  $(".number.waiting-list_box.btn.btn-primary").html(`<i class="fa fa-users"></i> ${text}명`)
-  console.log(text)
-};
-
-// app.waitingMenuHandler = () => {
-//   $('#main-contents').html(mainConTem());
-// };
+// ************************* main page **************************************
+//wating lists handler
 app.waitingMenuHandler = () => {
   axios.get(`${app.url}/watingList`)
     .then( response => {
@@ -60,5 +51,17 @@ app.waitingMenuHandler = () => {
       })
     })
     .catch( response => { console.log(response) } );
+};
+
+//wating list handler
+app.waitingPeopleHandler = () => {
+  var text = $(".number.modal-body input").val()
+  $(".number.waiting-list_box.btn.btn-primary").html(`<i class="fa fa-users"></i> ${text}명`)
+  console.log(text)
+};
+
+//logout handler
+app.logoutHandler = () => {
+  $('#contents').html(loginTem());
 };
 
